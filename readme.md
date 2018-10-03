@@ -40,6 +40,7 @@ Here are a few key differences compared to the original Valet:
 - [Introduction](#introduction)
 - [Installation](#installation)
   - [Serving sites](#serving-sites)
+  - [Migrating from Valet](#migrating-from-valet)
 - [Switching PHP version](#switching-php-version)
 - [Xdebug](#xdebug)
   - [PhpStorm](#phpstorm)
@@ -89,6 +90,14 @@ For example:
 2. `cd ~/sites/example`
 3. `echo "<?php echo 'Valet+ at your service';" > index.php`
 4. Go to `http://example.test`, you should see `Valet+ at your service`
+
+## Migrating-from-Valet
+First uninstall the `valet` and then install `valet-plus`.
+1. `composer global remove laravel/valet`
+2. `composer global require weprovide/valet-plus`
+3. `valet fix`
+4. `valet install`
+
 
 ## Switching PHP version
 
